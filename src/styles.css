@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+.child {
+    background-color: rgba(17, 0, 255, 0.556);
+    color: 'white'
+}

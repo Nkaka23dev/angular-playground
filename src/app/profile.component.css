@@ -1,0 +1,22 @@
+:host {
+    display: block;
+    color: green;
+    background-color: red;
+
+}
+
+/* 
+:host-context(.check) {
+    display: block;
+    color: green;
+    background-color: red;
+} */
+/* .nkaka {
+    color: green;
+    background-color: red;
+    font-size: 4rem
+}
+
+p {
+    color: red
+} */
