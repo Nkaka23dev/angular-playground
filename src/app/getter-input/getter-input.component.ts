@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { changeValue } from '../counter/counter.service';
 
 @Component({
   selector: 'tof-getter-input',
@@ -10,7 +11,7 @@ import { Component, Input } from '@angular/core';
 export class GetterInputComponent {
   private _title = '';
 
-  @Input()
+  @Input({ required: true })
   get title() {
     return this._title;
   }
