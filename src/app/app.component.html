@@ -1,4 +1,4 @@
-<tof-card>
+<!-- <tof-card>
     <div firstChild style="border: 2px solid red;">
         <h1>Heading 1</h1>
         <div>
@@ -43,4 +43,9 @@
 <tof-counter [dummyName]="counter" [name]="name" [showCounter]=true [title]="title"></tof-counter>
 <div style="color: red;">{{dataFromChildComponent}}</div>
 <tof-getter-input [title]=title></tof-getter-input>
-<tof-panel (dataEvent)="reveivedData($event)"></tof-panel>
+<tof-panel (dataEvent)="reveivedData($event)"></tof-panel> -->
+
+<button (click)="toggleHook()">Toggle Component</button>
+@if(isActive){
+<tof-life-cycle-hooks [title]="title"></tof-life-cycle-hooks>
+}
