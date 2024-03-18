@@ -46,6 +46,9 @@
 <tof-panel (dataEvent)="reveivedData($event)"></tof-panel> -->
 
 <button (click)="toggleHook()">Toggle Component</button>
-@if(isActive){
-<tof-life-cycle-hooks [title]="title"></tof-life-cycle-hooks>
-}
+<!-- @if(isActive){
+<tof-life-cycle-hooks [title]="title">
+    <tof-profile></tof-profile>
+</tof-life-cycle-hooks>
+} -->
+<tof-checked-lifecycle></tof-checked-lifecycle>
