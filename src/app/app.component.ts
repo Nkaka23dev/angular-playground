@@ -7,6 +7,7 @@ import { PanelComponent } from './panel/panel.component';
 import { CardComponent } from './card/card.component';
 import { HoverClickComponent } from './hover-click/hover-click.component';
 import { AfterRenderComponent } from './after-render/after-render.component';
+import { ViewChildExampleComponent } from './view-child-example/view-child-example.component';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,7 @@ import { AfterRenderComponent } from './after-render/after-render.component';
     CardComponent,
     HoverClickComponent,
     AfterRenderComponent,
+    ViewChildExampleComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

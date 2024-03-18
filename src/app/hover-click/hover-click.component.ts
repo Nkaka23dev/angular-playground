@@ -30,6 +30,10 @@ export class HoverClickComponent {
     alert('You clicked Me!');
   }
 
+  someMethods() {
+    console.log('Some method is now fired!');
+  }
+
   // @HostBinding('attr.role') role = 'Presentation';
 
   // @HostBinding('class.hovered') isHovered = false;
