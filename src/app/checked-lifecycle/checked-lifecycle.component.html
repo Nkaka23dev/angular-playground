@@ -1,0 +1,12 @@
+<h1>Angular Life Cycle Hooks Learning</h1>
+<div>
+    <input type="text" #inputField>
+</div>
+<div #scrollContainer class="scroll-container">
+    @for (item of items; track $index) {
+    <div>
+        <p>{{item}}</p>
+    </div>
+    }
+</div>
+<button (click)="addItem()">Click to add item</button>
