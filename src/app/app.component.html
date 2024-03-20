@@ -49,4 +49,16 @@
 
 <!-- <tof-after-render></tof-after-render> -->
 
-<tof-view-child-example></tof-view-child-example>
+<!-- <tof-view-child-example></tof-view-child-example> -->
+
+<!-- 
+@for (task of tasks; track $index) {
+<tof-task [taskItem]='task'></tof-task>
+} -->
+
+<tof-parent>
+    <tof-child></tof-child>
+    <tof-child></tof-child>
+    <tof-child></tof-child>
+    <tof-task taskItem="Hllo there!"></tof-task>
+</tof-parent>
