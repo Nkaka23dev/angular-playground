@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="my-3">
+                <app-count-output [counter]="counter"></app-count-output>
+            </div>
+            <div class="my-3">
+                <app-count-buttons 
+                 (increment)="onIncrement()"
+                 (decrement)="onDecrement()"
+                 (reset)="onReset()"
+                  ></app-count-buttons>
+            </div>
+        </div>
+    </div>
+</div>
