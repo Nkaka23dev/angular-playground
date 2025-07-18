@@ -11,5 +11,11 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.configPath": ".prettierrc.json",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+
+  // ✅ Add this block to fix ESLint issues (like spacing) on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  }
 }
