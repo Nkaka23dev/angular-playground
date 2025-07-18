@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   templateUrl: './count-output.component.html',
 })
 export class CountOutputComponent {
- @Input() counter: number = 0;
+  @Input() counter: number = 0;
 }

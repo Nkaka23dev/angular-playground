@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   standalone: true,
@@ -6,22 +6,18 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   imports: [],
   templateUrl: './count-buttons.component.html',
 })
-export class CountButtonsComponent implements OnInit{
+export class CountButtonsComponent {
   @Output() increment = new EventEmitter<void>();
   @Output() decrement = new EventEmitter<void>();
   @Output() reset = new EventEmitter();
 
-  constructor(){}
-
-  ngOnInit(): void {}
-
-  OnIncrement(){
+  OnIncrement() {
     this.increment.emit();
   }
-  OnDecrement(){
+  OnDecrement() {
     this.decrement.emit();
   }
-  OnReset(){
+  OnReset() {
     this.reset.emit();
   }
 }
