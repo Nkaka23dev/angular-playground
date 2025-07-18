@@ -10,14 +10,14 @@ import { CountButtonsComponent } from '../count-buttons/count-buttons.component'
   styleUrl: './count.component.css',
 })
 export class CountComponent {
-  counter: number = 0;
-  onIncrement() {
-    this.counter++;
-  }
-  onDecrement() {
-    this.counter--;
-  }
-  onReset() {
-    this.counter = 0;
-  }
+  // counter: number = 0;
+  // onIncrement() {
+  //   this.counter++;
+  // }
+  // onDecrement() {
+  //   this.counter--;
+  // }
+  // onReset() {
+  //   this.counter = 0;
+  // }
 }
