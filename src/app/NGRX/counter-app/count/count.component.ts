@@ -10,14 +10,18 @@ import { CountButtonsComponent } from '../count-buttons/count-buttons.component'
   styleUrl: './count.component.css',
 })
 export class CountComponent {
-  // counter: number = 0;
+  //COMMENTED!!! NEEDED ONLY FOR PASSING PARENT TO CHILD
+  // counterDisplay: number = 0;
   // onIncrement() {
-  //   this.counter++;
+  //   console.log('Counter increment clicked');
+  //   this.counterDisplay++;
   // }
   // onDecrement() {
-  //   this.counter--;
+  //   console.log('Counter decrement clicked');
+  //   this.counterDisplay--;
   // }
   // onReset() {
-  //   this.counter = 0;
+  //   console.log('Counter reset clicked');
+  //   this.counterDisplay = 0;
   // }
 }

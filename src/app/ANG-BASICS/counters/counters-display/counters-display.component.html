@@ -1,1 +1,13 @@
-<app-counters [counter]="counter" [message]="message" [showCounterInfo]="false"></app-counters>
+<app-counters (dataEvent)="displayReceived($event)" [counter]="counter" [message]="message"
+    [showCounterInfo]="false"></app-counters>
+
+<div class="container">
+    <div class="row">
+        <div>+===============================+</div>
+        <div *ngIf="receivedDataFromChild">
+            <div *ngFor="let data of receivedDataFromChild">
+                {{data}}
+            </div>
+        </div>
+    </div>
+</div>

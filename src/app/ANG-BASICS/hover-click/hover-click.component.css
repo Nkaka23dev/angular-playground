@@ -1,0 +1,9 @@
+:host {
+    display: block;
+    text-align: center;
+    padding: 10px
+}
+
+:host(.hovered) {
+    background-color: lightblue;
+}
