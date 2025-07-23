@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CountOutputComponent } from '../count-output/count-output.component';
 import { CountButtonsComponent } from '../count-buttons/count-buttons.component';
+import { CustomCounterComponent } from '../../customer-count-app/custom-counter/custom-counter.component';
 
 @Component({
   standalone: true,
   selector: 'app-count',
-  imports: [CountOutputComponent, CountButtonsComponent],
+  imports: [CountOutputComponent, CountButtonsComponent, CustomCounterComponent],
   templateUrl: './count.component.html',
   styleUrl: './count.component.css',
 })
