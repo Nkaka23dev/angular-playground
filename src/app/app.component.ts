@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { CountComponent } from './NGRX/counter-app/count/count.component';
 import { PostsComponent } from './Testss/components/posts/posts.component';
 import { GeneralDisplayComponent } from './ANG-BASICS/general-display/general-display.component';
+import { HomeComponent } from './ngrx-signal-store/home/home.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, PostsComponent, CountComponent, GeneralDisplayComponent],
+  imports: [CommonModule, PostsComponent, CountComponent, GeneralDisplayComponent, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

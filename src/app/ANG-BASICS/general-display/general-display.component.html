@@ -28,4 +28,13 @@ ABOUT THE CARD
 HOVER CLICK COMPONENT
 -->
 <!-- <app-hover-click></app-hover-click> -->
-<app-lifecycle [title]="title"></app-lifecycle>
+
+<!-- LIFECYCLE COMPONENT IS DOWN HERE  -->
+<div>
+    <button (click)="changeTitle()">Changes that trigger ngOnChanges</button>
+    <button (click)="toggleHooks()">Toggle Component to showcase ngOnDestroy</button>
+    <button (click)="changeUserName">Change user name</button>
+</div>
+@if (isActive) {
+<app-lifecycle [title]="title" [user]="user"></app-lifecycle>
+}

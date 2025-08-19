@@ -9,7 +9,19 @@ import { LifecycleComponent } from '../lifecycle/lifecycle.component';
   selector: 'app-general-display',
   imports: [HoverClickComponent, LifecycleComponent],
   templateUrl: './general-display.component.html',
+  styleUrls: ['./general-display.component.css'],
 })
 export class GeneralDisplayComponent {
   title = 'Lifecycle Component input sending to child compo';
+  user = { name: 'eric', age: 24 };
+  isActive = true;
+  changeTitle() {
+    this.title = `Random Title will be rendered ${Math.floor(Math.random() * 1000)}`;
+  }
+  toggleHooks() {
+    this.isActive = !this.isActive;
+  }
+  changeUserName() {
+    this.user.name = 'New added nname';
+  }
 }
